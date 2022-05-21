@@ -26,11 +26,11 @@ As an initial step the features.txt is grep-ed to identify which features relate
 
 	grep("mean|std", tolower(featuresNames) )
 
-Next the selected names are santised by replacing potentially invalid characters, non alpha charactes with an underscore using the following expression
+Next the selected names are sanitized by replacing potentially invalid characters, non alpha characters with an underscore using the following expression
 
 	featuresMeanStd %>% gsub("[^a-zA-Z]+","_", .)
 
-To make the feature names more redable the following abbriviation are extended to their full word based on the following replacements
+To make the feature names more readable the following abbreviation are extended to their full word based on the following replacements
 
 	featuresNamesCleaned <- 
 	  gsub("Acc", "Acceleration", featuresNamesCleaned) %>%
@@ -44,7 +44,7 @@ To make the feature names more redable the following abbriviation are extended t
 
 Consequently the dataset is constructed by loading the A) the subject data (subject_{type}.txt), B) the features data (X_{type}.txt") and  C) the Activity data (y_{type}.txt)
 
-The B data are updated so only the desired features are maintained and renamed to the more redable labels.
+The B data are updated so only the desired features are maintained and renamed to the more readable labels.
 The C data are replaced as of the Activity labels
 The A, B updated and C updated data are combined for the training and the test datasets.
 
@@ -57,7 +57,7 @@ Next the data are converted to a tidy dataset using the following expression
 	    variable.name = "Variable", value.name = "Value"
 	)
 
-Last the tidy data are converted to the delivarable using the following expression
+Last the tidy data are converted to the deliverable using the following expression
 
 	tidyDataset[, .(Mean = mean(Value)), by = c(idVariables, "Variable")]
 
@@ -69,7 +69,7 @@ The result dataset is composed of four columns namely the "Subject"  "Activity" 
 
 - The Subject column maintains the person's identified relevant to the data collection.
 - The Activity maintains activity the person was performing during the data accumulation 
-- The Variable maintains sensory information Relevant to the mean and the stadard deviation requested.
+- The Variable maintains sensory information Relevant to the mean and the standard deviation requested.
 - The Mean maintains the aggregated mean of the sensory information calculated by Subject, Activity and Variable
 
 Bellow a quick summary of the data is provided
@@ -221,3 +221,4 @@ The set of variables that were estimated from these signals are:
 
 angle(): Angle between to vectors.
 
+---
