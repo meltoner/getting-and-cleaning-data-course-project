@@ -60,7 +60,7 @@ fileName <- paste0(foldername,"/features.txt")
 featuresNames <- fread( fileName )$V2
 
 #'
-#' The `r filename` maintains the features definitions in counting to `r length(featuresNames)`
+#' The `r filename` maintains the features definitions counting to `r length(featuresNames)`
 #' The first five are reflected bellow.
 #' 
 
@@ -81,7 +81,7 @@ featuresMeanStd <- featuresNames[featuresMeanStdIndexes]
 featuresNamesCleaned <- featuresMeanStd %>% gsub("[^a-zA-Z]+","_", .)
 
 #' 
-#' Consequently known abbreviations are expanded so they are more userfriendly
+#' Consequently known abbreviations are expanded so they are more readable
 #' 
 
 featuresNamesCleaned <- 
@@ -167,12 +167,10 @@ tidyDataset <- melt(
     variable.name = "Variable", value.name = "Value"
 )
 
-
 #' 
 #' The tidy data- set is averaged by the subject and activity and variable
 #' 
 stepFive <- tidyDataset[, .(Mean = mean(Value)), by = c(idVariables, "Variable")]
-
 
 fwrite(stepFive, file = "delivery_step5.csv")
 
