@@ -151,11 +151,9 @@ combinedDataset <- lapply(1:2, mergeDataFiles) %>% rbindlist
 
 #' The resulting combined processed data sets has dimensions of `r dim(combinedDataset)`
 
-fwrite(combinedDataset, file = "delivery_step4.csv")
 
 #'
 #' # Convert dataset into a tidy dataset
-#'
 #'
 
 idVariables <- c("Subject", "Activity")
@@ -172,6 +170,8 @@ tidyDataset <- melt(
 #' 
 stepFive <- tidyDataset[, .(Mean = mean(Value)), by = c(idVariables, "Variable")]
 
-fwrite(stepFive, file = "delivery_step5.csv")
+#fwrite(stepFive, file = "delivery_step5.csv")
+
+write.table(stepFive, "submission.data.txt", row.name=FALSE)
 
 stepFive %>% print
