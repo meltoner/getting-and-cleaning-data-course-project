@@ -18,8 +18,8 @@ The repository maintains the following files :
 - [Readme.md](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/README.md) : The file you are currently reading
 - The [run_analysis.R](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/run_analysis.R) : The script performs the desired computations. (Included comments have been included following the rmarkdown style).
 - The [delivery_step4.zip](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/delivery_step4.zip) maintains the un-aggregated merged data-set (step4)
-- The [delivery_step5.csv](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/delivery_step5.csv) containing the tidy data submission, (step 5).
-- The [code.book.md] Describing the computations details and variables information.
+- The [delivery_step5.csv](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/delivery_step5.csv) containing the tidy data submission, delivering the aggregated data providing the average values by Subject, Activity and Variable (step 5).
+- The [code.book.md] Describing the computations in further details as well as the variables information.
 
 This repository has been developed by Konstantinos Papageorgiou for the purpose of the Peer-graded Assignment of the course :
 - Data Science: Foundations using R Specialization - [Getting and Cleaning Data Course of the Johns Hopkins University](https://www.coursera.org/learn/data-cleaning/home/welcome)
