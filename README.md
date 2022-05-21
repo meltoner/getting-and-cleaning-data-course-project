@@ -15,11 +15,11 @@ The **run_analysis.R** performs the requested data transformations shortly descr
 - Last, the average values per Subject, Activity and Variable are computed as the Project's step 5 deliverable.
 
 The repository maintains the following files :
-- Readme.md : The file you are currently reading
-- The run_analysis.R : The script performs the desired computations
-- The delivery_step4.zip maintains the un-aggregated merged data-set (step5)
-- The delivery_step5.csv containing the tidy data submission, asked in step 5
-- The code.book.md Describing the computations details and variables information
+- [Readme.md](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/README.md) : The file you are currently reading
+- The [run_analysis.R](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/run_analysis.R) : The script performs the desired computations. (Included comments have been included following the rmarkdown style).
+- The [delivery_step4.zip](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/delivery_step4.zip) maintains the un-aggregated merged data-set (step4)
+- The [delivery_step5.csv](https://github.com/meltoner/getting-and-cleaning-data-course-project/blob/main/delivery_step5.csv) containing the tidy data submission, (step 5).
+- The [code.book.md] Describing the computations details and variables information.
 
 This repository has been developed by Konstantinos Papageorgiou for the purpose of the Peer-graded Assignment of the course :
 - Data Science: Foundations using R Specialization - [Getting and Cleaning Data Course of the Johns Hopkins University](https://www.coursera.org/learn/data-cleaning/home/welcome)
